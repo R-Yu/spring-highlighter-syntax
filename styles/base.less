@@ -1,8 +1,8 @@
 @import "syntax-variables";
 
 /*atom-text-editor {
-  //background-color: @syntax-background-color;
-  //color: @syntax-text-color;
+  background-color: @whitesmoke;
+  color: @dark-gray;
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -39,7 +39,7 @@
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @dark-gray;
   }
 
   .cursor {
@@ -55,7 +55,7 @@
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @comment;
 }
 
 .syntax--keyword {
@@ -66,7 +66,7 @@
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @dark-gray;
   }
 
   &.syntax--other.syntax--special-method {
@@ -74,7 +74,7 @@
   }
 
   &.syntax--other.syntax--unit {
-    color: @cherry-blossom;
+    color: @strawberry;
   }
 }
 
@@ -83,14 +83,14 @@
 }
 
 .syntax--constant {
-  color: @cherry-blossom;
+  color: @strawberry;
 
   &.syntax--character.syntax--escape {
     color: @kumquat;
   }
 
   &.syntax--numeric {
-    color: @cherry-blossom;
+    color: @strawberry;
   }
 
   &.syntax--other.syntax--color {
@@ -103,20 +103,20 @@
 }
 
 .syntax--variable {
-  color: @strawberry;
+  color: @cherry-blossom;
 
   &.syntax--interpolation {
-    color: darken(@strawberry, 10%);
+    color: darken(@cherry-blossom, 10%);
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @dark-gray;
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @strawberry;
-  color: @syntax-background-color;
+  background-color: @cherry-blossom;
+  color: @whitesmoke;
 }
 
 .syntax--string {
@@ -127,12 +127,12 @@
     color: @kumquat;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @cherry-blossom;
+      color: @strawberry;
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @strawberry;
+    color: @cherry-blossom;
   }
 }
 
@@ -146,7 +146,7 @@
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @dark-gray;
     }
 
     &.syntax--heading,
@@ -166,7 +166,7 @@
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@strawberry, 10%);
+    color: darken(@cherry-blossom, 10%);
   }
 
 }
@@ -206,12 +206,12 @@
   }
 
   &.syntax--name.syntax--tag {
-    color: @strawberry;
+    color: @cherry-blossom;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @cherry-blossom;
+    color: @strawberry;
 
     &.syntax--id {
       color: @sky;
@@ -225,7 +225,7 @@
   }
 
   &.syntax--link {
-    color: @cherry-blossom;
+    color: @strawberry;
   }
 
   &.syntax--require {
@@ -238,17 +238,17 @@
 
   &.syntax--separator {
     background-color: @gray;
-    color: @syntax-text-color;
+    color: @dark-gray;
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @dark-gray;
 }
 
 .syntax--markup {
   &.syntax--bold {
-    color: @cherry-blossom;
+    color: @strawberry;
     font-weight: bold;
   }
 
@@ -257,7 +257,7 @@
   }
 
   &.syntax--deleted {
-    color: @strawberry;
+    color: @cherry-blossom;
   }
 
   &.syntax--italic {
@@ -274,11 +274,11 @@
   }
 
   &.syntax--list {
-    color: @strawberry;
+    color: @cherry-blossom;
   }
 
   &.syntax--quote {
-    color: @cherry-blossom;
+    color: @strawberry;
   }
 
   &.syntax--raw.syntax--inline {
